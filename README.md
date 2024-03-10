@@ -1,2 +1,2 @@
-# WPRG
-Zadania z WPRG
+# WPRG Zadania
+s30296
