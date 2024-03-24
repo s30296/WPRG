@@ -1,0 +1,43 @@
+<! -- ZADANIE 4 ––>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <style>
+        .parent {
+            background-color: lightgray;
+            width: 300px;
+            color: black;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .parent > div {
+            color: black;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .parent > div > div {
+            color: red;
+            font-size: 12px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .parent > div:last-child {
+            color: red;
+            font-size: 20px;
+            font-family: 'Arial', sans-serif, bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">Tekst w elemencie potomnym
+        <div>Tekst w elemencie potomnym
+            <div>Tekst w elemencie wnuku</div>
+        </div>
+        <div>Tekst w elemencie potomnym</div>
+    </div>
+</body>
+</html>
