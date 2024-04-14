@@ -1,0 +1,149 @@
+<!-- ZADANIE 4 -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <style>
+        .header, .footer {
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin-right: 300px;
+        }
+
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .text {
+            font-family: 'Arial', sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            margin: 40px;
+            text-align: left;
+        }
+
+        .line {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .boxes-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 0 20px 20px 0;
+            flex-grow: 1;
+        }
+
+        .box-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .box-text2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .box2 {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 0 20px 20px 0;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="https://localhost:8080">Strona główna</a></li>
+            <li><a href="https://localhost:8080">O nas</a></li>
+            <li><a href="https://localhost:8080">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="text">
+        <div class="line">Witaj na naszej</div>
+        <div class="line">skomplikowanej</div>
+        <div class="line">stronie!</div>
+    </div>
+    <div class="boxes-container">
+        <div class="boxes">
+            <div class="row">
+                <div class="box">
+                    <div class="box-text">Funkcja 1</div>
+                    <div class="box-text2">Opis funkcji 1...</div>
+                </div>
+                <div class="box">
+                    <div class="box-text">Funkcja 2</div>
+                    <div class="box-text2">Opis funkcji 2...</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-text">Funkcja 3</div>
+                <div class="box-text2">Opis funkcji 3...</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="box-text">Dodatkowe informacje</div>
+        <div class="box-text2">...</div>
+    </div>
+</div>
+<footer class="footer">
+    <a>© 2023 Skomplikowana strona z flexboxem. Wszelkie prawa zastrzeżone.</a>
+</footer>
+</body>
+</html>

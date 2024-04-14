@@ -1,0 +1,56 @@
+<!-- ZADANIE 1 -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <style>
+        .flex-container {
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            justify-content: space-evenly;
+            border: 3px solid;
+            height: 250px;
+        }
+
+        .column {
+            text-align: center;
+            background-color: lightblue;
+            flex-grow: 1;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .flex-container2 {
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid;
+            height: 250px;
+
+        }
+
+        .box {
+            text-align: center;
+            background-color: lightblue;
+            flex-grow: 0;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="column">Kolumna 1</div>
+        <div class="column">Kolumna 2</div>
+        <div class="column">Kolumna 3</div>
+    </div>
+    <hr>
+    <div class="flex-container2">
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 3</div>
+    </div>
+</body>
+</html>
