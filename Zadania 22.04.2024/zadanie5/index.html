@@ -1,0 +1,62 @@
+<!-- ZADANIE 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 250px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Prosty kalkulator</h2>
+    <form action="calculator.php" method="post">
+        <input type="text" name="num1" placeholder="Wprowadź liczbę">
+        <input type="text" name="num2" placeholder="Wprowadź liczbę">
+        <input type="submit" value="Dodaj" name="operator">
+        <input type="submit" value="Odejmij" name="operator">
+        <input type="submit" value="Pomnoz" name="operator">
+        <input type="submit" value="Podziel" name="operator">
+    </form>
+</div>
+<div class="container">
+    <h2>Zaawansowany kalkulator</h2>
+    <form action="advancedcalc.php" method="post">
+        <input type="text" name="value" placeholder="Wprowadź liczbę">
+        <input type="submit" value="Sinus" name="operator">
+        <input type="submit" value="Cosinus" name="operator">
+        <input type="submit" value="Tangens" name="operator">
+        <input type="submit" value="BinDec" name="operator">
+        <input type="submit" value="DecBin" name="operator">
+        <input type="submit" value="DecHex" name="operator">
+        <input type="submit" value="HexDec" name="operator">
+    </form>
+</div>
+</body>
+</html>
