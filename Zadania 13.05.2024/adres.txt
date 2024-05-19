@@ -1,0 +1,3 @@
+https://www.google.com/;Google
+https://en.wikipedia.org/;Wikipedia
+https://example.com/;Example

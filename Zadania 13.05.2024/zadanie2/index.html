@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+</style>
+<body>
+<form action="script.php" method="post">
+    <a>Sciezka:</a>
+    <input type="text" name="sciezka" required><br><br>
+    <a>Katalog:</a>
+    <input type="text" name="katalog" required><br><br>
+    <a>Operacja:</a>
+    <select name="operacja">
+        <option value="read">Odczyt</option>
+        <option value="delete">Usuwanie</option>
+        <option value="create">Tworzenie</option>
+    </select><br><br>
+    <input type="submit" value="Wykonaj">
+</form>
+</body>
+</html>
