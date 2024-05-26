@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Glosowanie</h1>
+    <form action="script.php" method="POST">
+        <p>Zaglosuj na zwierze:</p>
+        <label>
+            <input type="radio" name="glos" value="kot"> Kot
+        </label><br>
+        <label>
+            <input type="radio" name="glos" value="pies"> Pies
+        </label><br>
+        <label>
+            <input type="radio" name="glos" value="wieloryb"> Wieloryb
+        </label><br>
+        <label>
+            <input type="radio" name="glos" value="lis"> Lis
+        </label><br>
+        <button type="submit">Zaglosuj</button>
+    </form>
+</div>
+</body>
+</html>

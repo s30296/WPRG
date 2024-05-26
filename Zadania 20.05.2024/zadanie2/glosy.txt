@@ -1,0 +1,4 @@
+kot:2
+pies:3
+wieloryb:4
+lis:4
