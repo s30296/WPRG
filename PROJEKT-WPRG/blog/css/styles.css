@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/*Naglowek*/
+header {
+    background-color: transparent;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/*Panel nawigacyjny*/
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border: 2px solid #00a203;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    border-color: #016403;
+}
+
+main {
+    padding: 20px;
+}
+
+/*Strona glowna*/
+.mp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.mp article {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/*Style artykolow (glownie posty)*/
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #328c32;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Stopka*/
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    display: inline-block;
+    position: static;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border: 2px solid #00a203;
+    border-radius: 5px;
+}
+
+/*Komentarze*/
+.comment {
+    width: 35%;
+    margin-bottom: 1em;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content.edit-mode {
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.comment-content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.comment-actions textarea {
+    width: 75%;
+    height: 25%
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.post-navigation a {
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.post-navigation a:hover {
+    background-color: #f0f0f0;
+}
+
+/*Przyciski i pola tekstowe*/
+textarea {
+    resize: none;
+    height: 150px;
+    width: 25%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"],
+button[type="submit"],
+button#delete {
+    width: 25%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="submit"]:focus,
+button[type="submit"]:focus,
+button#delete:focus {
+    outline: none;
+    border-color: #00a203;
+}
+
+input[type="submit"],
+button[type="submit"],
+button#delete {
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover,
+button#delete:hover {
+    background-color: #016403;
+    border-color: #016403;
+}
+
+/*Login i rejestracja*/
+.lr {
+    width: 25%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lr input[type="text"],
+.lr input[type="password"],
+.lr input[type="email"],
+.lr input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.lr input[type="text"]:focus,
+.lr input[type="password"]:focus,
+.lr input[type="email"]:focus,
+.lr input[type="submit"]:focus {
+    outline: none;
+    border-color: #00a203;
+}
+
+.lr input[type="submit"] {
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.lr input[type="submit"]:hover {
+    background-color: #016403;
+    border-color: #016403;
+}
+
+/*Tworzenie posta*/
+.cr {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cr input[type="text"],
+.cr textarea,
+.cr input[type="file"],
+.cr button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cr input[type="text"]:focus,
+.cr textarea:focus,
+.cr input[type="file"]:focus,
+.cr button[type="submit"]:focus {
+    outline: none;
+    border-color: #00a203;
+}
+
+.cr button[type="submit"] {
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cr button[type="submit"]:hover {
+    background-color: #016403;
+    border-color: #016403;
+}
+
+/*Konto*/
+.ac {
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ac h2 {
+    margin-top: 20px;
+}
+
+.ac input[type="text"],
+.ac input[type="password"],
+.ac input[type="email"],
+.ac button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.ac input[type="text"]:focus,
+.ac input[type="password"]:focus,
+.ac input[type="email"]:focus,
+.ac button[type="submit"]:focus {
+    outline: none;
+    border-color: #00a203;
+}
+
+.ac button[type="submit"] {
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.ac button[type="submit"]:hover {
+    background-color: #016403;
+    border-color: #016403;
+}
+
+/*Zdjecia na stronie*/
+img {
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
